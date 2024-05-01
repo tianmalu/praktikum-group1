@@ -1,0 +1,164 @@
+di68goy@login03:~/praktikum-group1/assignment2> ./group1_batch_script.scp
+Running heat program compiled with -O2...500
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (500, 1500, ... 800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:   500, Time: 0.062 (0.110 GFlop => 1769.83 MFlop/s, residual 0.079613, 40 iterations)
+  500; 0.062; 1769.830
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O2.
+--------------------------------------------------------
+Running heat program compiled with -O2...1500
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (1500, 2500, ... 1800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  1500, Time: 0.861 (0.990 GFlop => 1150.37 MFlop/s, residual 0.238673, 40 iterations)
+ 1500; 0.861; 1150.371
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O2.
+--------------------------------------------------------
+Running heat program compiled with -O2...2500
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (2500, 3500, ... 2800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  2500, Time: 3.660 (2.750 GFlop => 751.34 MFlop/s, residual 0.397703, 40 iterations)
+ 2500; 3.660; 751.340
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O2.
+--------------------------------------------------------
+Running heat program compiled with -O2...3500
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (3500, 4500, ... 3800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  3500, Time: 7.845 (5.390 GFlop => 687.06 MFlop/s, residual 0.556728, 40 iterations)
+ 3500; 7.845; 687.064
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O2.
+--------------------------------------------------------
+Running heat program compiled with -O2... 4500
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (4500, 5500, ... 4800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  4500, Time: 12.835 (8.910 GFlop => 694.18 MFlop/s, residual 0.715752, 40 iterations)
+ 4500; 12.835; 694.183
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O2.
+--------------------------------------------------------
+--------------------------------------------------------
+--------------------------------------------------------
+--------------------------------------------------------
+Running heat program compiled with -O3 -fno-alias -xhost...
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (500, 1500, ... 800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:   500, Time: 0.062 (0.110 GFlop => 1767.35 MFlop/s, residual 0.079613, 40 iterations)
+  500; 0.062; 1767.349
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O3...500
+--------------------------------------------------------
+Running heat program compiled with -O3 -fno-alias -xhost...
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (1500, 2500, ... 1800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  1500, Time: 0.923 (0.990 GFlop => 1073.04 MFlop/s, residual 0.238673, 40 iterations)
+ 1500; 0.923; 1073.044
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O3...1500
+--------------------------------------------------------
+Running heat program compiled with -O3 -fno-alias -xhost...
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (2500, 3500, ... 2800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  2500, Time: 3.756 (2.750 GFlop => 732.24 MFlop/s, residual 0.397703, 40 iterations)
+ 2500; 3.756; 732.243
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O3...2500
+--------------------------------------------------------
+Running heat program compiled with -O3 -fno-alias -xhost...
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (3500, 4500, ... 3800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  3500, Time: 7.822 (5.390 GFlop => 689.10 MFlop/s, residual 0.556728, 40 iterations)
+ 3500; 7.822; 689.095
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O3...3500
+--------------------------------------------------------
+Running heat program compiled with -O3 -fno-alias -xhost...
+PAPI-HL Info: PAPI has been initiated!
+PAPI-HL Info: Using the following events:
+  PAPI_DP_OPS
+  PAPI_TOT_CYC
+Resolutions       : (4500, 5500, ... 4800)
+Iterations        : 40
+Algorithm         : 0 (Jacobi)
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+Resolution:  4500, Time: 12.775 (8.910 GFlop => 697.46 MFlop/s, residual 0.715752, 40 iterations)
+ 4500; 12.775; 697.460
+PAPI-HL Info: Print results...
+Finished running heat program compiled with -O3...4500
+--------------------------------------------------------

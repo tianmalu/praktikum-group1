@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#
+# Output and error (also --output, --error):
+#SBATCH -o job.out
+#SBATCH -e job.out
+#
+# Wall clock limit:
+#SBATCH --time=00:05:00
+#SBATCH --account=h039v
+#SBATCH --partition=test
+
+# Loop through each executable and run it
+for i in `seq 1 6`
+do
+    echo "Running test $i..."
+    ./heat test.dat
+    echo "Finished running test $i."
+    echo "----------------------------------"
+done

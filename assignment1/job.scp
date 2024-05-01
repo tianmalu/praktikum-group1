@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#
+# Output and error (also --output, --error):
+#SBATCH -o job.out
+#SBATCH -e job.out
+#
+# Wall clock limit:
+#SBATCH --time=00:05:00
+#SBATCH --account=h039v
+#SBATCH --partition=test
+
+# List of executables
+executables=(
+    "heat_O0"
+    "heat_O1"
+    "heat_O2"
+    "heat_O3"
+    "heat_Ofast"
+    "heat_xhost"
+)
+
+# Loop through each executable and run it
+for exec in "${executables[@]}"; do
+    echo "Running $exec..."
+    ./$exec test.dat
+    echo "Finished running $exec."
+    echo "----------------------------------"
+done
