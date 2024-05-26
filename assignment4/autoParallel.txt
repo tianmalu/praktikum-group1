@@ -1,0 +1,68 @@
+cat relax_jacobi.optrpt threshold-60
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+Begin optimization report for: relax_jacobi(double **, double **, unsigned int, unsigned int)
+
+    Report from: Auto-parallelization optimizations [par]
+
+
+LOOP BEGIN at relax_jacobi.c(22,3)
+   remark #17109: LOOP WAS AUTO-PARALLELIZED
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+      remark #25460: No loop optimizations reported
+   LOOP END
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+
+LOOP BEGIN at relax_jacobi.c(22,3)
+   remark #25460: No loop optimizations reported
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+   <Peeled loop for vectorization>
+   LOOP END
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+      remark #17107: loop was not parallelized: inner loop
+   LOOP END
+
+   LOOP BEGIN at relax_jacobi.c(27,5)
+   <Remainder loop for vectorization>
+   LOOP END
+LOOP END
+===========================================================================
+
+di68goy@login03:~/praktikum-group1/assignment4/HeatForOMP> ./test.scp
+Resolutions       : (2000, 6000, ... 6500)
+Iterations        : 50
+Num. Heat sources : 2
+   1: (0.00, 0.00) 1.00 1.00
+   2: (1.00, 1.00) 1.00 0.50
+
+
+Resolution: 2000
+===================
+Execution time: 0.349832
+Residual: 0.236070
+
+megaflops:  4001.9
+  flop instructions (M):  1400.000
+
+
+Resolution: 6000
+===================
+Execution time: 2.417807
+Residual: 0.708009
+
+
+The recommendation for use of !$OMP usage is to parallelise the outer loop and vectorise the inner loop. I wonder if ifort should provide recommendations on the likely gains (or lack of) where this can be assessed.

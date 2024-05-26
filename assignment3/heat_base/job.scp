@@ -1,0 +1,62 @@
+#!/bin/bash
+#
+# Job Name and Files (also --job-name)
+#SBATCH -J heat
+#
+# Output and error (also --output, --error):
+#SBATCH -o job.out
+#SBATCH -e job.out
+#
+# Wall clock limit:
+#SBATCH --time=00:01:00
+#SBATCH --account=h039v
+#SBATCH --partition=test
+#SBTACH --ear=off
+
+#load PAPI
+module load papi
+
+export PAPI_EVENTS="PAPI_L2_TCM, PAPI_L2_TCA, PAPI_L3_TCM, PAPI_L3_TCA"
+export PAPI_HL_VERBOSE=1
+
+# Execute the compiled programs
+echo "Running original code..."
+echo "Resolution = 500"
+export PAPI_OUTPUT_DIRECTORY="./heat_base/oritest500/"
+./heat_base/heat test500.dat
+echo "Resolution = 1500"
+export PAPI_OUTPUT_DIRECTORY="./heat_base/oritest1500/"
+./heat_base/heat test1500.dat
+echo "Resolution = 2500"
+export PAPI_OUTPUT_DIRECTORY="./heat_base/oritest2500/"
+./heat_base/heat test2500.dat
+echo "Resolution = 3500"
+export PAPI_OUTPUT_DIRECTORY="./heat_base/oritest3500/"
+./heat_base/heat test3500.dat
+echo "Resolution = 4500"
+export PAPI_OUTPUT_DIRECTORY="./heat_base/oritest4500/"
+./heat_base/heat test4500.dat
+echo "Finished running heat program compiled with -O2."
+
+echo "--------------------------------------------------------"
+echo "--------------------------------------------------------"
+echo "--------------------------------------------------------"
+
+echo "Running heat program compiled with -O3 -fno-alias -xhost..."
+echo "Resolution = 500"
+export PAPI_OUTPUT_DIRECTORY="./heat_sequential_optimization/opttest500/"
+./heat_sequential_optimization/heat test500.dat
+echo "Resolution = 1500"
+export PAPI_OUTPUT_DIRECTORY="./heat_sequential_optimization/opttest1500/"
+./heat_sequential_optimization/heat test1500.dat
+echo "Resolution = 2500"
+export PAPI_OUTPUT_DIRECTORY="./heat_sequential_optimization/opttest2500/"
+./heat_sequential_optimization/heat test2500.dat
+echo "Resolution = 3500"
+export PAPI_OUTPUT_DIRECTORY="./heat_sequential_optimization/opttest3500/"
+./heat_sequential_optimization/heat test3500.dat
+echo "Resolution = 4500"
+export PAPI_OUTPUT_DIRECTORY="./heat_sequential_optimization/opttest4500/"
+./heat_sequential_optimization/heat test4500.dat
+echo "Finished running optimized code"
+echo "--------------------------------------------------------"

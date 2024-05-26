@@ -1,0 +1,66 @@
+1018："computation":{
+            "region_count":"1",
+            "cycles":"300196386",
+            "PAPI_L2_TCM":"34854431",
+            "PAPI_L2_TCA":"19806006",
+            "PAPI_L3_TCM":"3383871",
+            "PAPI_L3_TCA":"34854431"
+          }
+L2 MISS RATE: 175.98%
+L3 MISS RATE: 9.71%
+
+1020： "computation":{
+            "region_count":"1",
+            "cycles":"253974274",
+            "PAPI_L2_TCM":"41373274",
+            "PAPI_L2_TCA":"16375359",
+            "PAPI_L3_TCM":"1976643",
+            "PAPI_L3_TCA":"41373274"
+          }
+L2 MISS RATE: 252.66%
+L3 MISS RATE: 4.78%
+
+1022："computation":{
+            "region_count":"1",
+            "cycles":"332311724",
+            "PAPI_L2_TCM":"41572935",
+            "PAPI_L2_TCA":"19228800",
+            "PAPI_L3_TCM":"3367508",
+            "PAPI_L3_TCA":"41572935"
+          }
+L2 MISS RATE: 216.2%
+L3 MISS RATE: 8.1%
+
+1024："computation":{
+            "region_count":"1",
+            "cycles":"307027998",
+            "PAPI_L2_TCM":"41003710",
+            "PAPI_L2_TCA":"16459907",
+            "PAPI_L3_TCM":"5079189",
+            "PAPI_L3_TCA":"41003710"
+          }
+L2 MISS RATE:  249.11%
+L3 MISS RATE:  12.39%
+
+1026： "computation":{
+            "region_count":"1",
+            "cycles":"263845250",
+            "PAPI_L2_TCM":"41338877",
+            "PAPI_L2_TCA":"19941943",
+            "PAPI_L3_TCM":"270298",
+            "PAPI_L3_TCA":"41338877"
+          }
+L2 MISS RATE: 207.3%
+L3 MISS RATE: 0.65%
+
+1028："computation":{
+            "region_count":"1",
+            "cycles":"246485514",
+            "PAPI_L2_TCM":"36907601",
+            "PAPI_L2_TCA":"17611091",
+            "PAPI_L3_TCM":"763402",
+            "PAPI_L3_TCA":"36907601"
+          }
+
+L2 MISS RATE: 209.57%
+L3 MISS RATE: 2.07%
