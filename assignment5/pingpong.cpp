@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         int message_size = message_sizes[size_idx];
         char* message = (char*)malloc(message_size);
 
-        MPI_Barrier(MPI_COMM_WORLD);
+        MPI_Barrier(MPI_COMM_WORLD);// Synchronize all processes before starting the timer
         start_time = MPI_Wtime();
 
         if (rank == 0) {

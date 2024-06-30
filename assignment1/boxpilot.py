@@ -19,7 +19,7 @@ batch_data = pd.DataFrame({
 
 labels = ['login', 'batch']
 
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(4, 3))
 
 
 bplot = plt.boxplot(login_data, patch_artist=True, positions = (1,3,5,7,9), widths=0.6, labels="login")
